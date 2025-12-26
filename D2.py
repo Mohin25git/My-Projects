@@ -20,12 +20,12 @@ print(fruit_name)  # prints: -apple
 # REPLACE METHOD
 
 # Remove "-" from the string
-result = fruit_name.replace("-", "")
-print(result)  # prints: apple
+replace1 = fruit_name.replace("-", "")
+print(replace1)  # prints: apple
 
 # Replace "-ap" with "or", giving the funny transformation "-apple" → "orple"
-resulT = fruit_name.replace("-ap", "or")
-print(resulT)  # prints: orple
+replace2 = fruit_name.replace("-ap", "or")
+print(replace2)  # prints: orple
 
 # MAKETRANS + TRANSLATE
 
@@ -34,10 +34,10 @@ Fruit = "mango"
 # Create a translation table that replaces:
 # 'm' → 't'
 # 'a' → 'o'
-res = Fruit.maketrans("ma", "to")
+replace3 = Fruit.maketrans("ma", "to")
 
 # Apply translation: "mango" → "tongo"
-print(Fruit.translate(res))
+print(Fruit.translate(replace3))
 
 # SPLIT METHOD
 
@@ -52,10 +52,10 @@ print("".join(step1))  # MohinShakya
 
 # REVERSE A SENTENCE
 
-userInput = "I love south indian movies"
+sentence = "I love south indian movies"
 
 # Convert each word's first letter to uppercase
-step_1 = userInput.title()
+step_1 = sentence.title()
 print(step_1)
 
 # Split into a list for reversing
@@ -80,21 +80,21 @@ password = "amazing_spiderman"
 
 # Replace selected letters with symbols:
 # a→@, e→3, i→!, o→0, s→$
-stp1 = password.maketrans("aeios", "@3!0$")
+transform = password.maketrans("aeios", "@3!0$")
 
 # Apply the translation and append "0##9" just for effect
-print(f"Your secret code is: {password.translate(stp1)}0##9")
+print(f"Your secret code is: {password.translate(transform)}0##9")
 
 # CLEANING AND EXTRACTING CLEAN USERNAME FROM EMAIL
 
 email = "shakya.mohin416@gmail.com"
 
 # Extract only the first 15 characters
-cleaned1 = email[:15]
+simplify_Mail = email[:15]
 
 # Remove periods to get a continuous username
-cleaned2 = cleaned1.replace(".", "")
-print(cleaned2)  # prints: shakyamohin416
+simpleMail = simplify_Mail.replace(".", "")
+print(simpleMail)  # prints: shakyamohin416
 
 # PHONE NUMBER CLEANER – REMOVE +, -, AND SPACES
 

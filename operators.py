@@ -128,16 +128,9 @@ x **= 2  # Equivalent to x = x ** 2(power)
 print("x after **= 2:", x)
 
 #Bitwise Operators and Assign
-# &=, |=, ^=, <<=, >>=
+# &=, |=, ^=, ~=, <<=, >>=
 x = 10   # 1010 in binary
 x &= 6   # 1010 & 0110 = 0010 where, there must be 1 and 1 to get 1
 print("x after &= 6:", x)
 
-
-
-
-
-
-
-
-
+# Important
